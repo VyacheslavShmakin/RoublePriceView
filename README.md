@@ -1,4 +1,4 @@
-# GooglePlay-CollapsingToolbar
+# Rouble PriceView
 Simple PriceView that can be used to represent any prices in Russian rouble currency.
 Library uses RobotoTextView as text presenter.
 
