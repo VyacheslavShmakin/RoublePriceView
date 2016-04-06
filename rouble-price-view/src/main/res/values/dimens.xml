@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="default_font_size">14sp</dimen>
+    <dimen name="default_padding">6dp</dimen>
+</resources>

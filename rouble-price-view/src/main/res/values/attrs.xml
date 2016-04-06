@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PriceView">
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="regionLength" format="integer"/>
+        <attr name="roublePadding" format="dimension"/>
+        <attr name="value" format="string"/>
+    </declare-styleable>
+</resources>
