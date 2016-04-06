@@ -1,5 +1,6 @@
 # GooglePlay-CollapsingToolbar
-Extended CollapsingToolbar that implemented scrolling behaviour like in Google Play app
+Simple PriceView that can be used to represent any prices in Russian rouble currency.
+Library uses RobotoTextView as text presenter.
 
 Download
 --------
@@ -7,7 +8,7 @@ Download
 Gradle:
 
 ```groovy
-compile 'com.github.VyacheslavShmakin.gp-collapsing-toolbar:1.0.0'
+compile 'com.github.VyacheslavShmakin.rouble-price-view:1.0.1'
 ```
 
 Maven:
@@ -15,8 +16,8 @@ Maven:
 ```xml
 <dependency>
     <groupId>com.github.VyacheslavShmakin</groupId>
-    <artifactId>gp-collapsing-toolbar</artifactId>
-    <version>1.0.0</version>
+    <artifactId>rouble-price-view</artifactId>
+    <version>1.0.1</version>
     <type>aar</type>
 </dependency>
 ```
@@ -25,28 +26,28 @@ Maven:
 Usage
 -----
 #### In Code
-If you wanna enable/disable or check like Google Play app styled behaviour programmatically you should call these methods
+If you wanna configure PriceView programmatically you should use these methods:
 ``` java
-YourGpCollapsingToolbar.setGooglePlayBehaviour(true);
-YourGpCollapsingToolbar.isGooglePlayBehaviour();
+mYourPriceView.setTextSize(<text size value>);
+mYourPriceView.setRegionLength(<region length limiter>);
+mYourPriceView.setRoublePadding(<padding value between price and rouble sign>);
+mYourPriceView.setTypeface(<set your own typeface if you need>);
+mYourPriceView.setTextColor(<just text color>);
+mYourPriceView.setValue(<price value>);
 ```
 
 -----
 #### In xml
 
-You should use the same parameters that defined in support.design library for CollapsingToolbar with "gp_" prefix
 ```xml
-<ru.shmakinv.android.material.widget.GpCollapsingToolbar
-            android:id="@+id/toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:gp_collapsedTitleTextAppearance="@style/Toolbar.TitleText"
-            app:gp_marketStyledBehaviour="true"
-            app:gp_contentScrim="@color/color_primary"
-            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
-            app:gp_statusBarScrim="@color/color_primary_dark"
-            app:toolbarId="@id/toolbar">
-            ...
-</ru.shmakinv.android.material.widget.GpCollapsingToolbar>
+ <ru.shmakinv.android.widget.PriceView
+        android:id="@+id/yourPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:textColor="@color/textColorPrimary"
+        app:textSize="14sp"
+        app:roublePadding="4dp"
+        app:typeface="roboto_regular"
+        app:regionLength="6"/>
 ```
