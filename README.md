@@ -8,7 +8,7 @@ Download
 Gradle:
 
 ```groovy
-compile 'com.github.VyacheslavShmakin.rouble-price-view:1.0.1'
+compile 'com.github.VyacheslavShmakin:rouble-price-view:1.0.1'
 ```
 
 Maven:
