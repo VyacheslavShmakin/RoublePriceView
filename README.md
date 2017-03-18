@@ -1,6 +1,6 @@
 # Rouble PriceView
 Simple PriceView that can be used to represent any prices in Russian rouble currency.
-Library uses RobotoTextView as text presenter.
+Library uses [RobotoTextView](https://github.com/johnkil/Android-RobotoTextView) as text presenter.
 
 Download
 --------
@@ -8,7 +8,7 @@ Download
 Gradle:
 
 ```groovy
-compile 'com.github.VyacheslavShmakin:rouble-price-view:1.0.1'
+compile 'com.github.VyacheslavShmakin.rouble-price-view:1.0.2'
 ```
 
 Maven:
@@ -17,7 +17,7 @@ Maven:
 <dependency>
     <groupId>com.github.VyacheslavShmakin</groupId>
     <artifactId>rouble-price-view</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <type>aar</type>
 </dependency>
 ```

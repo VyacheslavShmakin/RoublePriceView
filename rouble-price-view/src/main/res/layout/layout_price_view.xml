@@ -15,6 +15,7 @@
             android:id="@+id/price_limiter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            tools:text="12345 dasdawdaw"
             android:visibility="invisible"
             app:typeface="roboto_regular"/>
         <com.devspark.robototextview.widget.RobotoTextView
@@ -22,6 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            tools:text="12345"
             app:typeface="roboto_regular"/>
     </FrameLayout>
 

@@ -17,7 +17,7 @@ import android.view.Gravity;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import com.devspark.robototextview.util.RobotoTypefaceUtils;
+import com.devspark.robototextview.RobotoTypefaces;
 import com.devspark.robototextview.widget.RobotoTextView;
 
 /**
@@ -62,9 +62,9 @@ public class PriceView extends LinearLayout {
         mRoubleView = (RobotoTextView) findViewById(R.id.currency_sign);
 
         if (!isInEditMode()) {
-            RobotoTypefaceUtils.initView(mPriceView, context, attrs);
-            RobotoTypefaceUtils.initView(mPriceViewLimiter, context, attrs);
-            RobotoTypefaceUtils.initView(mRoubleView, context, attrs);
+            RobotoTypefaces.setUpTypeface(mPriceView, context, attrs);
+            RobotoTypefaces.setUpTypeface(mPriceViewLimiter, context, attrs);
+            RobotoTypefaces.setUpTypeface(mRoubleView, context, attrs);
         }
         initResources(context, attrs);
     }
@@ -138,8 +138,8 @@ public class PriceView extends LinearLayout {
     }
 
     public void setTypeface(@NonNull Typeface typeface) {
-        RobotoTypefaceUtils.setUp(mPriceView, typeface);
-        RobotoTypefaceUtils.setUp(mRoubleView, typeface);
+        RobotoTypefaces.setUpTypeface(mPriceView, typeface);
+        RobotoTypefaces.setUpTypeface(mRoubleView, typeface);
     }
 
     public void setTextColor(int textColor) {
