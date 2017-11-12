@@ -1,5 +1,12 @@
 Change Log
 ==========
+## Version 1.0.3
+
+_2017-11-12_
+
+ * Migrated from RobotoTextView library.
+ 
+ 
 ## Version 1.0.2
 
 _2017-03-18_

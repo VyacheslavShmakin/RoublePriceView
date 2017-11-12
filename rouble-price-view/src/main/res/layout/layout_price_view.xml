@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -11,27 +10,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="RtlHardcoded">
-        <com.devspark.robototextview.widget.RobotoTextView
+        <TextView
             android:id="@+id/price_limiter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="12345 dasdawdaw"
-            android:visibility="invisible"
-            app:typeface="roboto_regular"/>
-        <com.devspark.robototextview.widget.RobotoTextView
+            android:visibility="invisible"/>
+        <TextView
             android:id="@+id/price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            tools:text="12345"
-            app:typeface="roboto_regular"/>
+            tools:text="12345"/>
     </FrameLayout>
 
-    <com.devspark.robototextview.widget.RobotoTextView
+    <TextView
         android:id="@+id/currency_sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/rouble_sign"
-        app:typeface="roboto_regular"/>
+        android:text="@string/rouble_sign"/>
 </LinearLayout>
